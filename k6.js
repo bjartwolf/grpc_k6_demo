@@ -17,5 +17,10 @@ export default () => {
   console.log(JSON.stringify(response.message));
 
   client.close();
-  sleep(1);
 };
+
+export let options = {
+  vus: 10,
+  duration: "5s",
+  rps: 250, //max requests per second, increase to go faster
+}
